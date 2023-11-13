@@ -2,6 +2,8 @@
 
 This repository contains a very small program that waits for a modification made to a file given as input.
 
+This was born from the lack of inotify-tools.
+
 ## Installation
 
 Clone repo and build with cargo.
