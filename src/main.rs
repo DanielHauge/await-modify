@@ -10,10 +10,11 @@ fn main() -> Result<(), notify::Error> {
         Some(file) => PathBuf::from(file),
         None => panic!("Please provide a file to watch"),
     };
-    if !file.is_file() {
-        panic!("Please provide a file to watch");
+    if !file.exists() {
+        panic!("Please provide a file or directory to watch");
     }
-    println!("Hello, world!");
+
+    println!("Awaiting changes to {:?} ...", file);
 
     let mut watcher = notify::recommended_watcher(|res: Result<_, _>| match res {
         Ok(Event { kind: k, .. }) => {
