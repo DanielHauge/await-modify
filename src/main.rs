@@ -32,3 +32,11 @@ fn main() -> Result<(), notify::Error> {
         std::thread::sleep(std::time::Duration::from_secs(10));
     }
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test() {
+        assert!(true)
+    }
+}
