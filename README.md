@@ -2,7 +2,7 @@
 
 This repository contains a very small program that waits for a modification made to a file given as input.
 
-This was born from the lack of inotify-tools.
+This was made as a fun/learning project and as a result of lack of inotify-tools on windows.
 
 ## Installation
 
