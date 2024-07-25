@@ -2,6 +2,11 @@
 name = "await-modify"
 version = "0.1.0"
 edition = "2021"
+authors = ["Daniel <animcuil@gmail.com>"]
+description = "A simple tool to block until a file or directory is modified."
+readme = "README.md"
+repository = "https://github.com/DanielHauge/await-modify"
+license = "GPL-3.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
